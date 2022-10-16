@@ -1,13 +1,18 @@
 <script setup>
 import CardItem from "./CardItem.vue";
+const props = defineProps({ teste: {type: String}})
+const close = () => alert("close");
+
+console.log(props.teste)
 </script>
 
 <template>
   <div class="wrapper">
     <div class="wrapper__body">
-      <CardItem />
-
-      <CardItem />
+      <CardItem v-type-toast:success @close="close" />
+      <CardItem v-type-toast:warning @close="close" />
+      <CardItem v-type-toast:error />
+      <CardItem v-type-toast:info />
     </div>
   </div>
 </template>
