@@ -6,6 +6,8 @@ import CardItem from "./CardItem.vue";
   <div class="wrapper">
     <div class="wrapper__body">
       <CardItem />
+
+      <CardItem />
     </div>
   </div>
 </template>
@@ -23,6 +25,9 @@ import CardItem from "./CardItem.vue";
   &__body {
     max-width: 900px;
     min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: $vt-s-1;
     @include transition;
   }
   @media (max-width: $vt-tablet) {

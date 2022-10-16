@@ -1,9 +1,11 @@
 <script setup>
-const type = "info";
+const props = defineProps({
+  type: { type: String, default: "success" },
+});
 </script>
 
 <template>
-  <div class="card" :class="{ info: type === 'info' }">
+  <div class="card" :class="[props.type]">
     <div class="card__left">
       <div class="title">
         <figure>
