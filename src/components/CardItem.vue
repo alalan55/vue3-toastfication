@@ -1,9 +1,9 @@
 <script setup>
-const type = "success";
+const type = "warning";
 </script>
 
 <template>
-  <div class="card" :class="{ success: type === 'success' }">
+  <div class="card" :class="{ warning: type === 'warning' }">
     <div class="card__left">
       <div class="title">
         <figure>
@@ -71,6 +71,20 @@ const type = "success";
         img {
           filter: invert(71%) sepia(34%) saturate(852%) hue-rotate(73deg) brightness(95%)
             contrast(25%);
+        }
+      }
+    }
+  }
+}
+.warning {
+  background: $vt-yellow-1;
+  .card__left {
+    color: $vt-yellow-2;
+    .title {
+      figure {
+        img {
+          filter: invert(48%) sepia(50%) saturate(331%) hue-rotate(3deg) brightness(95%)
+            contrast(88%);
         }
       }
     }
