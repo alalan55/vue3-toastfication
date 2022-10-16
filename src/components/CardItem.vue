@@ -1,9 +1,9 @@
 <script setup>
-const type = "error";
+const type = "info";
 </script>
 
 <template>
-  <div class="card" :class="{ error: type === 'error' }">
+  <div class="card" :class="{ info: type === 'info' }">
     <div class="card__left">
       <div class="title">
         <figure>
@@ -100,6 +100,20 @@ const type = "error";
         img {
           filter: invert(39%) sepia(6%) saturate(2590%) hue-rotate(307deg)
             brightness(104%) contrast(84%);
+        }
+      }
+    }
+  }
+}
+
+.info {
+  background: $vt-blue-1;
+  .card__left {
+    color: $vt-blue-2;
+    .title {
+      figure {
+        img {
+            filter: invert(92%) sepia(80%) saturate(5582%) hue-rotate(246deg) brightness(77%) contrast(91%);
         }
       }
     }
