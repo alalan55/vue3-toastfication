@@ -113,7 +113,8 @@ const type = "info";
     .title {
       figure {
         img {
-            filter: invert(92%) sepia(80%) saturate(5582%) hue-rotate(246deg) brightness(77%) contrast(91%);
+          filter: invert(92%) sepia(80%) saturate(5582%) hue-rotate(246deg)
+            brightness(77%) contrast(91%);
         }
       }
     }

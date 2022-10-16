@@ -25,7 +25,10 @@ import CardItem from "./CardItem.vue";
     min-width: 500px;
     @include transition;
   }
-
+  @media (max-width: $vt-tablet) {
+    right: 10px;
+    top: 20px;
+  }
   @media (max-width: $vt-mobile) {
     top: 0;
     right: 0;
