@@ -11,7 +11,6 @@
 <style lang="scss" scoped>
 @import "@/assets/main.scss";
 .wrapper {
-  border: 2px solid red;
   position: fixed;
   top: 50px;
   right: 50px;
@@ -20,7 +19,6 @@
   @include transition;
 
   &__body {
-    border: 2px solid red;
     max-width: 500px;
     @include transition;
   }
