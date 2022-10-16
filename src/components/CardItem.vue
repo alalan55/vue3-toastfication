@@ -1,9 +1,9 @@
 <script setup>
-const type = "warning";
+const type = "error";
 </script>
 
 <template>
-  <div class="card" :class="{ warning: type === 'warning' }">
+  <div class="card" :class="{ error: type === 'error' }">
     <div class="card__left">
       <div class="title">
         <figure>
@@ -69,8 +69,8 @@ const type = "warning";
     .title {
       figure {
         img {
-          filter: invert(71%) sepia(34%) saturate(852%) hue-rotate(73deg) brightness(95%)
-            contrast(25%);
+          filter: invert(26%) sepia(10%) saturate(3371%) hue-rotate(73deg) brightness(99%)
+            contrast(77%);
         }
       }
     }
@@ -85,6 +85,21 @@ const type = "warning";
         img {
           filter: invert(48%) sepia(50%) saturate(331%) hue-rotate(3deg) brightness(95%)
             contrast(88%);
+        }
+      }
+    }
+  }
+}
+
+.error {
+  background: $vt-red-1;
+  .card__left {
+    color: $vt-red-2;
+    .title {
+      figure {
+        img {
+          filter: invert(39%) sepia(6%) saturate(2590%) hue-rotate(307deg)
+            brightness(104%) contrast(84%);
         }
       }
     }
