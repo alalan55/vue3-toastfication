@@ -21,7 +21,8 @@ import CardItem from "./CardItem.vue";
   @include transition;
 
   &__body {
-    max-width: 500px;
+    max-width: 900px;
+    min-width: 500px;
     @include transition;
   }
 
@@ -30,9 +31,11 @@ import CardItem from "./CardItem.vue";
     right: 0;
     left: 0;
     padding: 0;
+    height: auto;
 
     &__body {
       max-width: 100%;
+      min-width: 100%;
     }
   }
 }
