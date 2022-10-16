@@ -1,9 +1,11 @@
-<script setup></script>
+<script setup>
+import CardItem from "./CardItem.vue";
+</script>
 
 <template>
   <div class="wrapper">
     <div class="wrapper__body">
-      <span>Your internet connection was lost. Retry</span>
+      <CardItem />
     </div>
   </div>
 </template>
